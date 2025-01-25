@@ -61,3 +61,10 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.contact-form-content {
+  backdrop-filter: blur(13.7px);
+}
+.leadership-content {
+  background-color: rgba(1, 29, 69, 0.8);
+}
