@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-white font-bold text-[65px] leading-[75px];
+  }
+  h4 {
+    @apply text-white font-medium text-[30px] leading-[35px];
+  }
+  h5 {
+    @apply text-white font-normal text-[24px] leading-[26px];
+  }
+  .container {
+    padding: 0px 80px;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply py-4 px-20 block w-fit rounded-lg text-white font-medium uppercase;
+  }
+}
+
+.hero {
+  height: 870px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
