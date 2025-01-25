@@ -702,6 +702,10 @@ form input {
   margin-bottom: 100px;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mb-\[-50px\] {
   margin-bottom: -50px;
 }
@@ -746,10 +750,6 @@ form input {
   margin-top: 80px;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .flex {
   display: flex;
 }
@@ -766,12 +766,12 @@ form input {
   height: 55px;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-\[60px\] {
   height: 60px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-\[48px\] {
@@ -780,6 +780,10 @@ form input {
 
 .w-\[60\%\] {
   width: 60%;
+}
+
+.w-\[60px\] {
+  width: 60px;
 }
 
 .w-\[70\%\] {
@@ -797,10 +801,6 @@ form input {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[60px\] {
-  width: 60px;
 }
 
 .grid-cols-2 {
@@ -898,6 +898,10 @@ form input {
 
 .text-start {
   text-align: start;
+}
+
+.text-\[60px\] {
+  font-size: 60px;
 }
 
 .font-bold {
