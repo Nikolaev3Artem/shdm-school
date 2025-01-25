@@ -6,6 +6,9 @@
   h1 {
     @apply text-white font-bold text-[65px] leading-[75px];
   }
+  h3 {
+    @apply text-white text-[25px] leading-[26.5px];
+  }
   h4 {
     @apply text-white font-medium text-[30px] leading-[35px];
   }
@@ -20,6 +23,12 @@
 @layer components {
   .btn {
     @apply py-4 px-20 block w-fit rounded-lg text-white font-medium uppercase;
+  }
+  .btn-opacity {
+    @apply bg-opacity-0 text-white block uppercase font-bold border-[0.7px] border-white w-full rounded-lg py-3 text-[20px] text-center;
+  }
+  .program-card {
+    @apply relative z-10 flex justify-center items-center;
   }
 }
 
