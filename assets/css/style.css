@@ -693,6 +693,18 @@ form input {
   top: 2rem;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -776,6 +788,10 @@ form input {
 
 .w-\[48px\] {
   width: 48px;
+}
+
+.w-\[55px\] {
+  width: 55px;
 }
 
 .w-\[60\%\] {
@@ -898,10 +914,6 @@ form input {
 
 .text-start {
   text-align: start;
-}
-
-.text-\[60px\] {
-  font-size: 60px;
 }
 
 .font-bold {
