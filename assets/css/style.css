@@ -685,6 +685,14 @@ form input {
   bottom: 0px;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -738,6 +746,10 @@ form input {
   margin-top: 80px;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -756,6 +768,10 @@ form input {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[60px\] {
+  height: 60px;
 }
 
 .w-\[48px\] {
@@ -781,6 +797,10 @@ form input {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[60px\] {
+  width: 60px;
 }
 
 .grid-cols-2 {

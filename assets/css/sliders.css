@@ -4,6 +4,7 @@
 }
 
 .speakers.swiper-slide {
+  position: relative;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -11,6 +12,25 @@
   justify-content: center;
   align-items: center;
   border-radius: 16px;
+}
+.speaker-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: end;
+  padding: 20px 25px;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(179.9deg, rgba(0, 159, 226, 0) 0.09%, #009fe2 71.65%);
+  border-radius: 16px;
+}
+
+.speakers.swiper-slide:hover .speaker-info {
+  display: flex;
 }
 
 .swiper-button-next,
