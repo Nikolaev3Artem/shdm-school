@@ -6,7 +6,7 @@ module.exports = {
   },
   theme: {
     screens: {
-      xl: { max: "1440px" },
+      xl: { max: "1600px" },
       lg: { max: "1024px" },
       md: { max: "768px" },
       sm: { max: "380px" },
@@ -15,16 +15,16 @@ module.exports = {
       colors: {
         yellow: "#FDCE40",
         blue: "#009FE2",
-        black: "#2F2F2F",
+        black: "#000000",
         red: "#DC0037",
       },
       fontFamily: {
-        bebas: ['"Bebas Neue"', "serif"],
-        gilroyBold: ['"Gilroy-Bold"', "serif"],
-        gilroyHeavy: ['"Gilroy-Heavy"', "serif"],
-        gilroyLight: ['"Gilroy-Light"', "serif"],
-        gilroyMedium: ['"Gilroy-Medium"', "serif"],
-        gilroy: ['"Gilroy-Regular"', "serif"],
+        bebas: ['"Bebas Neue"', "sans-serif"],
+        gilroyBold: ['"Gilroy-Bold"', "sans-serif"],
+        gilroyHeavy: ['"Gilroy-Heavy"', "sans-serif"],
+        gilroyLight: ['"Gilroy-Light"', "sans-serif"],
+        gilroyMedium: ['"Gilroy-Medium"', "sans-serif"],
+        gilroy: ['"Gilroy-Regular"', "sans-serif"],
       },
     },
   },

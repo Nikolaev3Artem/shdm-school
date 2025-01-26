@@ -569,7 +569,7 @@ h1 {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   h1 {
     font-size: 80px;
     line-height: 85px;
@@ -577,7 +577,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Gilroy-Bold", serif;
+  font-family: "Gilroy-Bold", sans-serif;
   font-size: 30px;
   font-weight: 500;
   line-height: 35px;
@@ -586,15 +586,22 @@ h2 {
 }
 
 h3 {
-  font-family: "Gilroy-Regular", serif;
-  font-size: 23px;
-  line-height: 25.5px;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-size: 28px;
+  line-height: 35px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+@media (max-width: 1600px) {
+  h3 {
+    font-size: 19px;
+    line-height: 24px;
+  }
+}
+
 h5 {
-  font-family: "Gilroy-Regular", serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
@@ -603,7 +610,7 @@ h5 {
 }
 
 h6 {
-  font-family: "Gilroy-Medium", serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
@@ -639,7 +646,8 @@ span.mark {
   padding-bottom: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  font-family: "Gilroy-Medium", serif;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 26px;
   font-weight: 500;
   text-transform: uppercase;
   --tw-text-opacity: 1;
@@ -657,7 +665,7 @@ span.mark {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   text-align: center;
-  font-family: "Gilroy-Medium", serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -694,7 +702,7 @@ form input {
   border-radius: 0.375rem;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(47 47 47 / var(--tw-border-opacity, 1));
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
   padding-left: 1.25rem;
 }
 
@@ -847,6 +855,10 @@ form input {
   height: 60px;
 }
 
+.h-\[90px\] {
+  height: 90px;
+}
+
 .h-\[950px\] {
   height: 950px;
 }
@@ -875,16 +887,16 @@ form input {
   width: 58%;
 }
 
-.w-\[60\%\] {
-  width: 60%;
-}
-
 .w-\[60px\] {
   width: 60px;
 }
 
 .w-\[64\%\] {
   width: 64%;
+}
+
+.w-\[67\%\] {
+  width: 67%;
 }
 
 .w-\[70\%\] {
@@ -908,28 +920,16 @@ form input {
   width: 100%;
 }
 
-.w-\[65\%\] {
-  width: 65%;
-}
-
-.w-\[66\%\] {
-  width: 66%;
-}
-
-.w-\[67\%\] {
-  width: 67%;
-}
-
 .max-w-3xl {
   max-width: 48rem;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -1030,6 +1030,10 @@ form input {
   padding: 3rem;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1039,9 +1043,19 @@ form input {
   padding-right: 2rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .py-\[100px\] {
@@ -1054,12 +1068,20 @@ form input {
   padding-bottom: 150px;
 }
 
-.pt-\[120px\] {
-  padding-top: 120px;
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
-.pt-\[60px\] {
-  padding-top: 60px;
+.pb-\[150px\] {
+  padding-bottom: 150px;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-\[120px\] {
+  padding-top: 120px;
 }
 
 .text-center {
@@ -1071,15 +1093,43 @@ form input {
 }
 
 .font-bebas {
-  font-family: "Bebas Neue", serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .font-gilroyBold {
-  font-family: "Gilroy-Bold", serif;
+  font-family: "Gilroy-Bold", sans-serif;
 }
 
 .font-gilroyMedium {
-  font-family: "Gilroy-Medium", serif;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+.text-\[100px\] {
+  font-size: 100px;
+}
+
+.text-\[110px\] {
+  font-size: 110px;
+}
+
+.text-\[120px\] {
+  font-size: 120px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[48px\] {
+  font-size: 48px;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
+}
+
+.text-\[80px\] {
+  font-size: 80px;
 }
 
 .text-lg {
@@ -1103,9 +1153,33 @@ form input {
   text-transform: uppercase;
 }
 
+.leading-\[110px\] {
+  line-height: 110px;
+}
+
+.leading-\[120px\] {
+  line-height: 120px;
+}
+
+.leading-\[130px\] {
+  line-height: 130px;
+}
+
+.leading-\[45px\] {
+  line-height: 45px;
+}
+
+.leading-\[55px\] {
+  line-height: 55px;
+}
+
+.leading-\[90px\] {
+  line-height: 90px;
+}
+
 .text-black {
   --tw-text-opacity: 1;
-  color: rgb(47 47 47 / var(--tw-text-opacity, 1));
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-blue {
@@ -1157,7 +1231,7 @@ form input {
 .contact-form,
 .leadership-program,
 .soldier-med {
-  height: 870px;
+  /* height: 870px; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1169,6 +1243,73 @@ form input {
           backdrop-filter: blur(13.7px);
 }
 
-.leadership-content {
-  background-color: rgba(1, 29, 69, 0.8);
+@media (max-width: 1600px) {
+  .xl\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .xl\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xl\:text-\[32px\] {
+    font-size: 32px;
+  }
+
+  .xl\:text-\[35px\] {
+    font-size: 35px;
+  }
+
+  .xl\:text-\[50px\] {
+    font-size: 50px;
+  }
+
+  .xl\:text-\[60px\] {
+    font-size: 60px;
+  }
+
+  .xl\:text-\[70px\] {
+    font-size: 70px;
+  }
+
+  .xl\:text-\[75px\] {
+    font-size: 75px;
+  }
+
+  .xl\:text-\[80px\] {
+    font-size: 80px;
+  }
+
+  .xl\:leading-\[35px\] {
+    line-height: 35px;
+  }
+
+  .xl\:leading-\[36px\] {
+    line-height: 36px;
+  }
+
+  .xl\:leading-\[40px\] {
+    line-height: 40px;
+  }
+
+  .xl\:leading-\[55px\] {
+    line-height: 55px;
+  }
+
+  .xl\:leading-\[65px\] {
+    line-height: 65px;
+  }
+
+  .xl\:leading-\[80px\] {
+    line-height: 80px;
+  }
+
+  .xl\:leading-\[85px\] {
+    line-height: 85px;
+  }
+
+  .xl\:leading-\[90px\] {
+    line-height: 90px;
+  }
 }

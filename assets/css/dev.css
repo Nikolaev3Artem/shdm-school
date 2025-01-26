@@ -16,7 +16,7 @@
     @apply text-white font-medium text-[30px] leading-[35px] font-gilroyBold;
   }
   h3 {
-    @apply text-white text-[23px] leading-[25.5px] font-gilroy;
+    @apply text-white text-[28px] leading-[35px] xl:text-[19px] xl:leading-[24px]  font-gilroy;
   }
 
   h5 {
@@ -44,7 +44,7 @@
 
 @layer components {
   .btn {
-    @apply py-4 px-20 block w-fit rounded-lg text-white font-medium uppercase font-gilroyMedium;
+    @apply py-4 px-20 block w-fit rounded-lg text-white text-[26px] font-medium uppercase font-gilroyMedium;
   }
   .btn-opacity {
     @apply bg-opacity-0 text-white block uppercase font-bold border-[0.7px] border-white w-full rounded-lg py-3 text-[20px] text-center font-gilroyMedium;
@@ -64,7 +64,7 @@
 .contact-form,
 .leadership-program,
 .soldier-med {
-  height: 870px;
+  /* height: 870px; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +73,4 @@
 
 .contact-form-content {
   backdrop-filter: blur(13.7px);
-}
-.leadership-content {
-  background-color: rgba(1, 29, 69, 0.8);
 }
