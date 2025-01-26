@@ -19,14 +19,13 @@ module.exports = {
         red: "#DC0037",
       },
       keyframes: {
-        slideIn: {
+        slideInRight: {
           "0%": { opacity: "0", transform: "translateX(100%)" },
-          "50%": { opacity: "0.5", transform: "translateX(50%)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
       },
       animation: {
-        slideIn: "slideIn 0.8s ease-out forwards",
+        slideInRight: "slideInRight 0.8s ease-out forwards",
       },
       fontFamily: {
         bebas: ['"Bebas Neue Pro"', "sans-serif"],
