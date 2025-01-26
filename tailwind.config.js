@@ -23,9 +23,14 @@ module.exports = {
           "0%": { opacity: "0", transform: "translateX(100%)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
+        slideInLeft: {
+          "0%": { opacity: "0", transform: "translateX(-100%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
       },
       animation: {
         slideInRight: "slideInRight 0.8s ease-out forwards",
+        slideInLeft: "slideInLeft 0.8s ease-out forwards",
       },
       fontFamily: {
         bebas: ['"Bebas Neue Pro"', "sans-serif"],

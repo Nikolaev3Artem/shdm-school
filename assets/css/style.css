@@ -977,6 +977,22 @@ form input {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
 @keyframes slideInRight {
   0% {
     opacity: 0;
@@ -1281,26 +1297,6 @@ form input {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.delay-\[0ms\] {
-  transition-delay: 0ms;
-}
-
-.delay-\[200ms\] {
-  transition-delay: 200ms;
-}
-
-.delay-\[400ms\] {
-  transition-delay: 400ms;
-}
-
-.delay-\[600ms\] {
-  transition-delay: 600ms;
-}
-
-.delay-\[800ms\] {
-  transition-delay: 800ms;
 }
 
 @font-face {
