@@ -12,14 +12,16 @@
   justify-content: center;
   align-items: center;
   border-radius: 16px;
+  transition: 0.3s;
 }
+
 .speaker-info {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
   flex-direction: column;
   justify-content: end;
   padding: 20px 25px;
@@ -27,10 +29,17 @@
   backdrop-filter: blur(8px);
   background: linear-gradient(179.9deg, rgba(0, 159, 226, 0) 0.09%, #009fe2 71.65%);
   border-radius: 16px;
+
+  opacity: 0; /* Приховуємо за замовчуванням */
+  pointer-events: none; /* Забороняємо взаємодію */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Додаємо плавність */
+  transform: scale(0.95); /* Трохи зменшуємо для ефекту зростання */
 }
 
 .speakers.swiper-slide:hover .speaker-info {
-  display: flex;
+  opacity: 1; /* Робимо видимим */
+  pointer-events: auto; /* Дозволяємо взаємодію */
+  transform: scale(1); /* Повертаємо до початкового розміру */
 }
 
 .swiper-button-next,
