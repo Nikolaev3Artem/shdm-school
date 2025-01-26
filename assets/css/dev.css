@@ -4,19 +4,20 @@
 
 @layer base {
   h1 {
-    @apply text-white font-bold text-[65px] leading-[75px];
-  }
-  h3 {
-    @apply text-white text-[25px] leading-[26.5px];
+    @apply text-white font-bold text-[75px] leading-[85px];
   }
   h2 {
-    @apply text-white font-medium text-[30px] leading-[35px];
+    @apply text-white font-medium text-[30px] leading-[35px] font-gilroyBold;
   }
+  h3 {
+    @apply text-white text-[23px] leading-[25.5px] font-gilroy;
+  }
+
   h5 {
-    @apply text-white font-normal text-[24px] leading-[26px];
+    @apply text-white font-normal text-[24px] leading-[26px] font-gilroy;
   }
   h6 {
-    @apply text-[12px] leading-[14px] font-medium;
+    @apply text-[12px] leading-[14px] font-medium font-gilroyMedium;
   }
   .container {
     display: flex;
@@ -37,10 +38,10 @@
 
 @layer components {
   .btn {
-    @apply py-4 px-20 block w-fit rounded-lg text-white font-medium uppercase;
+    @apply py-4 px-20 block w-fit rounded-lg text-white font-medium uppercase font-gilroyMedium;
   }
   .btn-opacity {
-    @apply bg-opacity-0 text-white block uppercase font-bold border-[0.7px] border-white w-full rounded-lg py-3 text-[20px] text-center;
+    @apply bg-opacity-0 text-white block uppercase font-bold border-[0.7px] border-white w-full rounded-lg py-3 text-[20px] text-center font-gilroyMedium;
   }
   .program-card {
     @apply relative z-10 flex justify-center items-center;
@@ -55,7 +56,8 @@
 
 .hero,
 .contact-form,
-.leadership-program {
+.leadership-program,
+.soldier-med {
   height: 870px;
   background-size: cover;
   background-position: center;

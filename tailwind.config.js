@@ -18,6 +18,14 @@ module.exports = {
         black: "#2F2F2F",
         red: "#DC0037",
       },
+      fontFamily: {
+        bebas: ['"Bebas Neue"', "serif"],
+        gilroyBold: ['"Gilroy-Bold"', "serif"],
+        gilroyHeavy: ['"Gilroy-Heavy"', "serif"],
+        gilroyLight: ['"Gilroy-Light"', "serif"],
+        gilroyMedium: ['"Gilroy-Medium"', "serif"],
+        gilroy: ['"Gilroy-Regular"', "serif"],
+      },
     },
   },
 };
