@@ -18,8 +18,18 @@ module.exports = {
         black: "#000000",
         red: "#DC0037",
       },
+      keyframes: {
+        slideIn: {
+          "0%": { opacity: "0", transform: "translateX(100%)" },
+          "50%": { opacity: "0.5", transform: "translateX(50%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        slideIn: "slideIn 0.8s ease-out forwards",
+      },
       fontFamily: {
-        bebas: ['"Bebas Neue"', "sans-serif"],
+        bebas: ['"Bebas Neue Pro"', "sans-serif"],
         gilroyBold: ['"Gilroy-Bold"', "sans-serif"],
         gilroyHeavy: ['"Gilroy-Heavy"', "sans-serif"],
         gilroyLight: ['"Gilroy-Light"', "sans-serif"],
