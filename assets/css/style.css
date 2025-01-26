@@ -835,6 +835,10 @@ form input {
   display: grid;
 }
 
+.h-\[1080px\] {
+  height: 1080px;
+}
+
 .h-\[154px\] {
   height: 154px;
 }
@@ -865,6 +869,18 @@ form input {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[1052px\] {
+  height: 1052px;
+}
+
+.max-h-\[1052px\] {
+  max-height: 1052px;
+}
+
+.max-h-\[1080px\] {
+  max-height: 1080px;
 }
 
 .w-\[242px\] {
