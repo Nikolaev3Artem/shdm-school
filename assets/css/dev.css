@@ -13,7 +13,7 @@
     @apply text-white font-bold text-[140px] leading-[160px] xl:text-[80px] xl:leading-[85px];
   }
   h2 {
-    @apply text-white font-medium text-[30px] leading-[35px] font-gilroyBold;
+    @apply text-white font-medium text-[30px] leading-[35px] lg:text-[25px] lg:leading-[30px] font-gilroyBold;
   }
   h3 {
     @apply text-white text-[28px] leading-[35px] xl:text-[19px] xl:leading-[24px]  font-gilroy;
@@ -44,10 +44,10 @@
 
 @layer components {
   .btn {
-    @apply py-4 px-20 block w-fit rounded-lg text-white text-[26px] font-medium uppercase font-gilroyMedium;
+    @apply py-4 px-20 lg:py-3 lg:px-[60px] block w-fit rounded-lg text-white text-[26px] lg:text-[19px] font-medium uppercase font-gilroyMedium;
   }
   .btn-opacity {
-    @apply bg-opacity-0 text-white block uppercase font-bold border-[0.7px] border-white w-full rounded-lg py-3 text-[20px] text-center font-gilroyMedium;
+    @apply bg-opacity-0 text-white block uppercase font-bold border-[0.7px] border-white w-full rounded-lg py-3 xl:py-2 text-[20px] xl:text-[18px] text-center font-gilroyMedium;
   }
   .program-card {
     @apply relative z-10 flex justify-center items-center;
