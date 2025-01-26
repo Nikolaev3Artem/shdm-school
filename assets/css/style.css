@@ -562,11 +562,18 @@ body {
 }
 
 h1 {
-  font-size: 75px;
+  font-size: 140px;
   font-weight: 700;
-  line-height: 85px;
+  line-height: 160px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 80px;
+    line-height: 85px;
+  }
 }
 
 h2 {
@@ -609,7 +616,6 @@ h6 {
   justify-content: center;
   padding: 0px 80px;
   height: 100%;
-  max-width: 1440px;
 }
 
 span.mark {
@@ -708,12 +714,8 @@ form input {
   bottom: 10%;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
+.left-5 {
+  left: 1.25rem;
 }
 
 .right-10 {
@@ -740,24 +742,8 @@ form input {
   top: 2rem;
 }
 
-.top-\[10\%\] {
-  top: 10%;
-}
-
 .top-\[15\%\] {
   top: 15%;
-}
-
-.left-20 {
-  left: 5rem;
-}
-
-.left-10 {
-  left: 2.5rem;
-}
-
-.left-5 {
-  left: 1.25rem;
 }
 
 .z-10 {
@@ -861,20 +847,12 @@ form input {
   height: 60px;
 }
 
-.h-\[900px\] {
-  height: 900px;
-}
-
 .h-\[950px\] {
   height: 950px;
 }
 
 .h-full {
   height: 100%;
-}
-
-.w-1\/4 {
-  width: 25%;
 }
 
 .w-\[242px\] {
@@ -891,6 +869,10 @@ form input {
 
 .w-\[55px\] {
   width: 55px;
+}
+
+.w-\[58\%\] {
+  width: 58%;
 }
 
 .w-\[60\%\] {
@@ -926,23 +908,20 @@ form input {
   width: 100%;
 }
 
+.w-\[65\%\] {
+  width: 65%;
+}
+
+.w-\[66\%\] {
+  width: 66%;
+}
+
+.w-\[67\%\] {
+  width: 67%;
+}
+
 .max-w-3xl {
   max-width: 48rem;
-}
-
-.rotate-180 {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[-180\] {
-  --tw-rotate: -180;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[180\] {
-  --tw-rotate: 180;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-2 {
@@ -951,10 +930,6 @@ form input {
 
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.flex-row-reverse {
-  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -1168,12 +1143,6 @@ form input {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition {

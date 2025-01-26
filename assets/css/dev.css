@@ -10,7 +10,7 @@
     justify-content: center;
   }
   h1 {
-    @apply text-white font-bold text-[75px] leading-[85px];
+    @apply text-white font-bold text-[140px] leading-[160px] xl:text-[80px] xl:leading-[85px];
   }
   h2 {
     @apply text-white font-medium text-[30px] leading-[35px] font-gilroyBold;
@@ -32,7 +32,6 @@
     justify-content: center;
     padding: 0px 80px;
     height: 100%;
-    max-width: 1440px;
   }
   span.mark {
     background-image: url("../images/icons/mark-icon.webp");
