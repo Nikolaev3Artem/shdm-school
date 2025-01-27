@@ -27,10 +27,14 @@ module.exports = {
           "0%": { opacity: "0", transform: "translateX(-100%)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
+        spin: {
+          to: { transform: "rotate(-360deg)" },
+        },
       },
       animation: {
         slideInRight: "slideInRight 0.8s ease-out forwards",
         slideInLeft: "slideInLeft 0.8s ease-out forwards",
+        infiniteSpin: "spin 7s linear infinite",
       },
       fontFamily: {
         bebas: ['"Bebas Neue Pro"', "sans-serif"],
