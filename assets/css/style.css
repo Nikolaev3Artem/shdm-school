@@ -576,6 +576,12 @@ h1 {
   }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
 h2 {
   font-family: "Gilroy-Bold", sans-serif;
   font-size: 30px;
@@ -630,6 +636,20 @@ h6 {
   justify-content: center;
   padding: 0px 80px;
   height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 span.mark {
@@ -800,6 +820,10 @@ form input {
 .my-\[100px\] {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-8 {
@@ -979,10 +1003,6 @@ form input {
   max-width: 48rem;
 }
 
-.max-w-\[330px\] {
-  max-width: 330px;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -1097,14 +1117,6 @@ form input {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.overflow-auto {
-  overflow: auto;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .whitespace-nowrap {
@@ -1486,10 +1498,6 @@ form input {
     margin-top: 2rem;
   }
 
-  .xl\:flex {
-    display: flex;
-  }
-
   .xl\:h-\[40px\] {
     height: 40px;
   }
@@ -1563,10 +1571,6 @@ form input {
     line-height: 35px;
   }
 
-  .xl\:leading-\[40px\] {
-    line-height: 40px;
-  }
-
   .xl\:leading-\[45px\] {
     line-height: 45px;
   }
@@ -1589,8 +1593,16 @@ form input {
 }
 
 @media (max-width: 1024px) {
-  .lg\:relative {
-    position: relative;
+  .lg\:right-4 {
+    right: 1rem;
+  }
+
+  .lg\:top-4 {
+    top: 1rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:mt-10 {
@@ -1601,45 +1613,98 @@ form input {
     margin-top: 1rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:h-\[30px\] {
     height: 30px;
   }
 
+  .lg\:h-\[40px\] {
+    height: 40px;
+  }
+
   .lg\:w-\[30px\] {
     width: 30px;
   }
 
-  .lg\:w-full {
-    width: 100%;
+  .lg\:w-\[40px\] {
+    width: 40px;
   }
 
   .lg\:w-\[90\%\] {
     width: 90%;
   }
 
-  .lg\:w-\[330px\] {
-    width: 330px;
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-\[85\%\] {
+    width: 85%;
   }
 
   .lg\:max-w-\[330px\] {
     max-width: 330px;
   }
 
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   .lg\:flex-col {
     flex-direction: column;
   }
 
-  .lg\:overflow-auto {
-    overflow: auto;
+  .lg\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
+  }
+
+  .lg\:overflow-hidden {
+    overflow: hidden;
   }
 
   .lg\:py-\[50px\] {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:text-center {
+    text-align: center;
+  }
+
+  .lg\:font-bebas {
+    font-family: "Bebas Neue Pro", sans-serif;
+  }
+
+  .lg\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .lg\:text-\[35px\] {
+    font-size: 35px;
   }
 
   .lg\:text-\[38px\] {
@@ -1650,13 +1715,79 @@ form input {
     font-size: 40px;
   }
 
+  .lg\:leading-\[36px\] {
+    line-height: 36px;
+  }
+
+  .lg\:leading-\[38px\] {
+    line-height: 38px;
+  }
+
   .lg\:leading-\[45px\] {
     line-height: 45px;
   }
 }
 
 @media (max-width: 768px) {
+  .md\:right-2 {
+    right: 0.5rem;
+  }
+
+  .md\:top-2 {
+    top: 0.5rem;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .md\:mb-\[-20px\] {
+    margin-bottom: -20px;
+  }
+
+  .md\:h-\[30px\] {
+    height: 30px;
+  }
+
+  .md\:w-\[30px\] {
+    width: 30px;
+  }
+
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .md\:text-\[34px\] {
+    font-size: 34px;
+  }
+
+  .md\:text-\[33px\] {
+    font-size: 33px;
+  }
+
+  .md\:text-\[32px\] {
+    font-size: 32px;
   }
 }
