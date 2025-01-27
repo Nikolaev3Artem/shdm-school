@@ -789,10 +789,6 @@ form input {
   top: 15%;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -983,6 +979,14 @@ form input {
   max-width: 48rem;
 }
 
+.max-w-\[330px\] {
+  max-width: 330px;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
@@ -1093,6 +1097,18 @@ form input {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-lg {
@@ -1442,6 +1458,10 @@ form input {
 }
 
 @media (max-width: 1600px) {
+  .xl\:relative {
+    position: relative;
+  }
+
   .xl\:right-3 {
     right: 0.75rem;
   }
@@ -1464,6 +1484,10 @@ form input {
 
   .xl\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .xl\:flex {
+    display: flex;
   }
 
   .xl\:h-\[40px\] {
@@ -1565,12 +1589,20 @@ form input {
 }
 
 @media (max-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:mt-10 {
     margin-top: 2.5rem;
   }
 
   .lg\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:h-\[30px\] {
@@ -1583,6 +1615,26 @@ form input {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .lg\:w-\[330px\] {
+    width: 330px;
+  }
+
+  .lg\:max-w-\[330px\] {
+    max-width: 330px;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:overflow-auto {
+    overflow: auto;
   }
 
   .lg\:py-\[50px\] {
@@ -1600,5 +1652,11 @@ form input {
 
   .lg\:leading-\[45px\] {
     line-height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .md\:w-full {
+    width: 100%;
   }
 }

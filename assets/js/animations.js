@@ -91,3 +91,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach((card) => observer.observe(card));
 });
+
+// Отримуємо список
+const programList = document.querySelector(".first-program");
+
+// Функція для перевірки ширини екрана і клонування елементів
+const cloneItemsIfNeeded = () => {
+  if (window.innerWidth <= 1024) {
+    const items = Array.from(programList.children);
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      programList.appendChild(clone);
+    });
+  }
+};
+
+cloneItemsIfNeeded(); // Клонуємо елементи тільки для мобільної версії
+
+let scrollAmount = 0;
+
+function autoScroll() {
+  // Плавна прокрутка
+  programList.scrollLeft = scrollAmount;
+
+  // Якщо досягли кінця першого циклу (до клонованого контенту)
+  if (scrollAmount >= programList.scrollWidth / 2) {
+    scrollAmount = 0; // Повертаємося на початок (не помітно для користувача)
+  } else {
+    scrollAmount += 1; // Задаємо швидкість прокручування
+  }
+}
+
+// Запускаємо автопрокрутку кожні 20 мс
+setInterval(autoScroll, 20);
