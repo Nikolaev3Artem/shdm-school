@@ -5,11 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const index = Array.from(cards).indexOf(entry.target); // Знаходимо порядковий номер картки
-        const delay = index * 200; // Розраховуємо затримку: 200ms для кожної наступної картки
+        const delay = index * 200; // Затримка анімації появи
 
         setTimeout(() => {
-          entry.target.classList.remove("opacity-0", "transform");
+          entry.target.classList.remove("opacity-0"); // Робимо елемент видимим
           entry.target.classList.add("animate-slideInRight");
+
+          // Додаємо клас для фіксації кінцевого стану
+          setTimeout(() => {
+            entry.target.classList.remove("animate-slideInRight");
+            entry.target.classList.add("animation-done"); // Клас для фіксації
+          }, 800); // 800ms — тривалість анімації
         }, delay);
 
         observer.unobserve(entry.target); // Зупиняємо спостереження після запуску анімації
