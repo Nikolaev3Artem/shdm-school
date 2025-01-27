@@ -713,6 +713,13 @@ span.mark {
   }
 }
 
+@media (max-width: 768px) {
+  .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .btn-opacity {
   display: block;
   width: 100%;
@@ -793,6 +800,10 @@ form input {
   bottom: 0px;
 }
 
+.bottom-\[-85\%\] {
+  bottom: -85%;
+}
+
 .bottom-\[10\%\] {
   bottom: 10%;
 }
@@ -827,34 +838,6 @@ form input {
 
 .top-\[15\%\] {
   top: 15%;
-}
-
-.bottom-\[-20px\] {
-  bottom: -20px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.bottom-\[-100\%\] {
-  bottom: -100%;
-}
-
-.bottom-\[-150\%\] {
-  bottom: -150%;
-}
-
-.bottom-\[-70\%\] {
-  bottom: -70%;
-}
-
-.bottom-\[-90\%\] {
-  bottom: -90%;
-}
-
-.bottom-\[-85\%\] {
-  bottom: -85%;
 }
 
 .z-10 {
@@ -1045,14 +1028,6 @@ form input {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .max-w-3xl {
@@ -1656,6 +1631,10 @@ form input {
     top: 1rem;
   }
 
+  .lg\:mb-\[500px\] {
+    margin-bottom: 500px;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -1666,14 +1645,6 @@ form input {
 
   .lg\:mt-4 {
     margin-top: 1rem;
-  }
-
-  .lg\:mb-\[240px\] {
-    margin-bottom: 240px;
-  }
-
-  .lg\:mb-\[500px\] {
-    margin-bottom: 500px;
   }
 
   .lg\:block {
@@ -1696,16 +1667,16 @@ form input {
     height: 40px;
   }
 
-  .lg\:h-\[460px\] {
-    height: 460px;
-  }
-
   .lg\:w-\[30px\] {
     width: 30px;
   }
 
   .lg\:w-\[40px\] {
     width: 40px;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:w-\[85\%\] {
@@ -1718,10 +1689,6 @@ form input {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-\[50\%\] {
-    width: 50%;
   }
 
   .lg\:max-w-\[330px\] {
@@ -1762,12 +1729,12 @@ form input {
     padding-bottom: 50px;
   }
 
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
   .lg\:pb-\[200px\] {
     padding-bottom: 200px;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:text-center {
@@ -1800,10 +1767,6 @@ form input {
 }
 
 @media (max-width: 768px) {
-  .md\:absolute {
-    position: absolute;
-  }
-
   .md\:right-2 {
     right: 0.5rem;
   }
@@ -1816,16 +1779,8 @@ form input {
     margin-bottom: -20px;
   }
 
-  .md\:mb-\[40px\] {
-    margin-bottom: 40px;
-  }
-
   .md\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .md\:mb-\[240px\] {
-    margin-bottom: 240px;
   }
 
   .md\:flex {
@@ -1844,21 +1799,17 @@ form input {
     width: 30px;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .md\:pt-10 {
-    padding-top: 2.5rem;
   }
 
   .md\:text-\[100px\] {
