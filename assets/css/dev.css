@@ -55,17 +55,20 @@
     @apply text-white font-bold text-[140px] leading-[160px] xl:text-[80px] xl:leading-[85px] md:text-[60px];
   }
   h2 {
-    @apply text-white font-medium text-[30px] leading-[35px] lg:text-[25px] lg:leading-[30px] font-gilroyBold;
+    @apply text-white font-medium text-[30px] leading-[35px] xl:text-[25px] lg:text-[25px] lg:leading-[30px] font-gilroyBold;
   }
   h3 {
-    @apply text-white text-[28px] leading-[35px] xl:text-[19px] xl:leading-[24px]  font-gilroy;
+    @apply text-white text-[28px] leading-[35px] xl:text-[19px] xl:leading-[24px] font-gilroy;
   }
 
   h5 {
-    @apply text-white font-normal text-[24px] leading-[26px] font-gilroy;
+    @apply text-white font-normal text-[24px] leading-[26px] xl:text-[18px] xl:leading-[20px] md:text-[16px] md:leading-[18px] xl:font-gilroy;
   }
   h6 {
     @apply text-[12px] leading-[14px] font-medium font-gilroyMedium;
+  }
+  .container {
+    @apply lg:px-[60px] md:px-10;
   }
   .container {
     display: flex;
@@ -75,9 +78,7 @@
     padding: 0px 80px;
     height: 100%;
   }
-  .container {
-    @apply lg:px-[60px] md:px-10;
-  }
+
   span.mark {
     background-image: url("../images/icons/mark-icon.webp");
     background-position: center;
@@ -114,8 +115,4 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-}
-
-.contact-form-content {
-  backdrop-filter: blur(13.7px);
 }

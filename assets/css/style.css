@@ -591,6 +591,12 @@ h2 {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+@media (max-width: 1600px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 1024px) {
   h2 {
     font-size: 25px;
@@ -614,7 +620,6 @@ h3 {
 }
 
 h5 {
-  font-family: "Gilroy-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
@@ -622,20 +627,26 @@ h5 {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+@media (max-width: 1600px) {
+  h5 {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h5 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
 h6 {
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 80px;
-  height: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -650,6 +661,15 @@ h6 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 80px;
+  height: 100%;
 }
 
 span.mark {
@@ -807,6 +827,34 @@ form input {
 
 .top-\[15\%\] {
   top: 15%;
+}
+
+.bottom-\[-20px\] {
+  bottom: -20px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.bottom-\[-100\%\] {
+  bottom: -100%;
+}
+
+.bottom-\[-150\%\] {
+  bottom: -150%;
+}
+
+.bottom-\[-70\%\] {
+  bottom: -70%;
+}
+
+.bottom-\[-90\%\] {
+  bottom: -90%;
+}
+
+.bottom-\[-85\%\] {
+  bottom: -85%;
 }
 
 .z-10 {
@@ -999,6 +1047,14 @@ form input {
   width: 100%;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -1167,10 +1223,6 @@ form input {
 
 .p-12 {
   padding: 3rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .p-5 {
@@ -1452,11 +1504,6 @@ form input {
   width: 100%;
 }
 
-.contact-form-content {
-  -webkit-backdrop-filter: blur(13.7px);
-          backdrop-filter: blur(13.7px);
-}
-
 @media (hover: hover) and (pointer: fine) {
   .group:hover .group-hover\:w-full {
     width: 100%;
@@ -1480,6 +1527,10 @@ form input {
 
   .xl\:top-2 {
     top: 0.5rem;
+  }
+
+  .xl\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .xl\:mt-1 {
@@ -1593,6 +1644,10 @@ form input {
 }
 
 @media (max-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:right-4 {
     right: 1rem;
   }
@@ -1611,6 +1666,14 @@ form input {
 
   .lg\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .lg\:mb-\[240px\] {
+    margin-bottom: 240px;
+  }
+
+  .lg\:mb-\[500px\] {
+    margin-bottom: 500px;
   }
 
   .lg\:block {
@@ -1633,12 +1696,20 @@ form input {
     height: 40px;
   }
 
+  .lg\:h-\[460px\] {
+    height: 460px;
+  }
+
   .lg\:w-\[30px\] {
     width: 30px;
   }
 
   .lg\:w-\[40px\] {
     width: 40px;
+  }
+
+  .lg\:w-\[85\%\] {
+    width: 85%;
   }
 
   .lg\:w-\[90\%\] {
@@ -1649,8 +1720,8 @@ form input {
     width: 100%;
   }
 
-  .lg\:w-\[85\%\] {
-    width: 85%;
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:max-w-\[330px\] {
@@ -1681,14 +1752,22 @@ form input {
     overflow: hidden;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:py-\[50px\] {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:pb-\[200px\] {
+    padding-bottom: 200px;
   }
 
   .lg\:text-center {
@@ -1711,10 +1790,6 @@ form input {
     font-size: 38px;
   }
 
-  .lg\:text-\[40px\] {
-    font-size: 40px;
-  }
-
   .lg\:leading-\[36px\] {
     line-height: 36px;
   }
@@ -1722,13 +1797,13 @@ form input {
   .lg\:leading-\[38px\] {
     line-height: 38px;
   }
-
-  .lg\:leading-\[45px\] {
-    line-height: 45px;
-  }
 }
 
 @media (max-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:right-2 {
     right: 0.5rem;
   }
@@ -1737,16 +1812,28 @@ form input {
     top: 0.5rem;
   }
 
-  .md\:mt-2 {
-    margin-top: 0.5rem;
+  .md\:mb-\[-20px\] {
+    margin-bottom: -20px;
+  }
+
+  .md\:mb-\[40px\] {
+    margin-bottom: 40px;
   }
 
   .md\:mt-5 {
     margin-top: 1.25rem;
   }
 
-  .md\:mb-\[-20px\] {
-    margin-bottom: -20px;
+  .md\:mb-\[240px\] {
+    margin-bottom: 240px;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-\[30px\] {
@@ -1761,13 +1848,8 @@ form input {
     width: 100%;
   }
 
-  .md\:p-0 {
-    padding: 0px;
-  }
-
-  .md\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+  .md\:w-\[70\%\] {
+    width: 70%;
   }
 
   .md\:py-10 {
@@ -1775,19 +1857,31 @@ form input {
     padding-bottom: 2.5rem;
   }
 
-  .md\:text-\[36px\] {
-    font-size: 36px;
+  .md\:pt-10 {
+    padding-top: 2.5rem;
   }
 
-  .md\:text-\[34px\] {
-    font-size: 34px;
+  .md\:text-\[100px\] {
+    font-size: 100px;
   }
 
-  .md\:text-\[33px\] {
-    font-size: 33px;
+  .md\:text-\[16px\] {
+    font-size: 16px;
   }
 
   .md\:text-\[32px\] {
     font-size: 32px;
+  }
+
+  .md\:text-\[35px\] {
+    font-size: 35px;
+  }
+
+  .md\:leading-\[110px\] {
+    line-height: 110px;
+  }
+
+  .md\:leading-\[38px\] {
+    line-height: 38px;
   }
 }

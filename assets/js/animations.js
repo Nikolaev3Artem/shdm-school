@@ -124,3 +124,36 @@ function autoScroll() {
 
 // Запускаємо автопрокрутку кожні 20 мс
 setInterval(autoScroll, 20);
+
+// Отримуємо список
+const programList2 = document.querySelector(".second-program");
+
+// Функція для перевірки ширини екрана і клонування елементів
+const cloneItemsIfNeeded2 = () => {
+  if (window.innerWidth <= 1024) {
+    const items = Array.from(programList2.children);
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      programList2.appendChild(clone);
+    });
+  }
+};
+
+cloneItemsIfNeeded2(); // Клонуємо елементи тільки для мобільної версії
+
+let scrollAmount2 = 0;
+
+function autoScroll2() {
+  // Плавна прокрутка
+  programList2.scrollLeft = scrollAmount2;
+
+  // Якщо досягли кінця першого циклу (до клонованого контенту)
+  if (scrollAmount2 >= programList2.scrollWidth / 2) {
+    scrollAmount2 = 0; // Повертаємося на початок (не помітно для користувача)
+  } else {
+    scrollAmount2 += 1; // Задаємо швидкість прокручування
+  }
+}
+
+// Запускаємо автопрокрутку кожні 20 мс
+setInterval(autoScroll2, 20);

@@ -36,6 +36,12 @@
   transform: scale(0.95); /* Трохи зменшуємо для ефекту зростання */
 }
 
+@media (max-width: 768px) {
+  .speaker-info {
+    padding: 20px 15px;
+  }
+}
+
 .speakers.swiper-slide:hover .speaker-info {
   opacity: 1; /* Робимо видимим */
   pointer-events: auto; /* Дозволяємо взаємодію */
