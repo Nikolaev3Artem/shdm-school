@@ -35,8 +35,6 @@ module.exports = {
       fontFamily: {
         bebas: ['"Bebas Neue Pro"', "sans-serif"],
         gilroyBold: ['"Gilroy-Bold"', "sans-serif"],
-        gilroyHeavy: ['"Gilroy-Heavy"', "sans-serif"],
-        gilroyLight: ['"Gilroy-Light"', "sans-serif"],
         gilroyMedium: ['"Gilroy-Medium"', "sans-serif"],
         gilroy: ['"Gilroy-Regular"', "sans-serif"],
       },

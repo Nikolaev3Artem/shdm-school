@@ -48,15 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const index = Array.from(cards).indexOf(entry.target); // Знаходимо порядковий номер картки
-        const delay = index * 200; // Розраховуємо затримку: 200ms для кожної наступної картки
+        const index = Array.from(cards).indexOf(entry.target);
+        const delay = index * 200;
 
         setTimeout(() => {
           entry.target.classList.remove("slideInRight");
           entry.target.classList.add("animate-slideInRight");
         }, delay);
 
-        observer.unobserve(entry.target); // Зупиняємо спостереження після запуску анімації
+        observer.unobserve(entry.target);
       }
     });
   });

@@ -6,9 +6,7 @@
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <link href="https://fonts.cdnfonts.com/css/bebas-neue" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/gilroy-bold"
-            rel="stylesheet">
+
         <link rel="stylesheet" href="./assets/css/sliders.css">
         <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -39,8 +37,20 @@
                     та оториноларингологів, у фокусі якого – ЛОР патології та
                     суміжні захворювання</h5>
                 <div class="flex gap-8 mt-[60px]">
-                    <a class="btn bg-blue" href="#">РЕЄСТРАЦІЯ</a>
-                    <a class="btn bg-yellow" href="#">ТРАНСЛЯЦІЯ</a>
+                    <a
+                        href="#"
+                        class="btn bg-blue group">
+                        <span
+                            class="absolute inset-0 w-0 bg-yellow transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <span class="relative z-10">РЕЄСТРАЦІЯ</span>
+                    </a>
+                    <a
+                        href="#"
+                        class="btn bg-yellow group">
+                        <span
+                            class="absolute inset-0 w-0 bg-blue transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <span class="relative z-10">ТРАНСЛЯЦІЯ</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -186,7 +196,12 @@
                     class="mark"> 100
                     балів з</span>а
                 рік!</h2>
-            <a href="#" class="btn bg-blue mt-[60px]">РЕЄСТРАЦІЯ</a>
+            <a href="#"
+                class="btn bg-blue group uppercase mt-[60px]">
+                <span
+                    class="absolute inset-0 w-0 bg-yellow transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                <span class="relative ">РЕЄСТРАЦІЯ</span>
+            </a>
         </section>
         <section class="container">
             <ul class="grid grid-cols-5 gap-5 second-program">
@@ -312,11 +327,11 @@
                 <div
                     class="w-[70%] xl:w-[80%] lg:w-full flex flex-col items-center">
                     <h1
-                        class="text-[90px] slideInRight leading-[110px] xl:text-[60px] xl:leading-[70px] lg:text-[40px] lg:leading-[45px] text-center font-gilroyBold">Лiдерська
+                        class="text-[90px] animate-slideInRight leading-[110px] xl:text-[60px] xl:leading-[70px] lg:text-[40px] lg:leading-[45px] text-center font-gilroyBold">Лiдерська
                         програма
                         для лiкарiв <span
                             class="text-red">MEDFUTURE</span></h1>
-                    <h3 class="text-center mt-4 slideInLeft">за
+                    <h3 class="text-center mt-4 animate-slideInLeft">за
                         підтримки <span
                             class="text-yellow font-bold">SHDM.SCHOOL</span></h3>
                     <h5
@@ -334,8 +349,14 @@
                         життям! Реєструйтеся, щоб отримати доступ до
                         відеозаписів та
                         першими дізнатись про наступний набір в проєкт!</h5>
-                    <a href="#" class="btn bg-red mt-12 slideInLeft">ДІЗНАТИСЯ
-                        БІЛЬШЕ</a>
+                    <a
+                        href="#"
+                        class="btn bg-red group slideInLeft mt-12">
+                        <span
+                            class="absolute inset-0 w-0 bg-yellow transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <span class="relative z-10">ДІЗНАТИСЯ
+                            БІЛЬШЕ</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -509,8 +530,13 @@
                         в подальших кроках, після отримання вашої анкети</h5>
                     <input type="text" placeholder="ПІБ">
                     <input type="text" placeholder="Номер телефону">
-                    <button type="submit" class="btn bg-yellow">ПОДАТИ
-                        ЗАЯВКУ</button>
+                    <button type="submit"
+                        class="btn bg-yellow group mt-12">
+                        <span
+                            class="absolute inset-0 w-0 bg-blue transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <span class="relative z-10">ПОДАТИ
+                            ЗАЯВКУ</span>
+                    </button>
                     <h6>Натиснувши кнопку «ПОДАТИ ЗАЯВКУ», ви підтверджуєте свою
                         згоду на обробку ваших персональних даних відповідно до
                         Політики конфіденційності та даєте згоду на отримання
@@ -594,8 +620,11 @@
                     </h4>
                     <div class="mt-6 w-full flex justify-center">
                         <a href="#"
-                            class="btn bg-blue">
-                            ЗАПОВНИТИ АНКЕТУ
+                            class="btn bg-blue group mt-12">
+                            <span
+                                class="absolute inset-0 w-0 bg-yellow transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                            <span class="relative z-10">ПОДАТИ
+                                ЗАЯВКУ</span>
                         </a>
                     </div>
                 </div>
@@ -628,6 +657,12 @@
                     class="text-[110px] leading-[130px] xl:text-[75px] xl:leading-[85px] text-yellow font-gilroyBold mt-10 ">SHDM.SCHOOL</h1>
                 <div class="absolute top-10 right-10"><img
                         src="./assets/images/icons/med-icon.webp" alt></div>
+                <a href="#"
+                    class="btn bg-yellow group uppercase mt-10 z-10">
+                    <span
+                        class="absolute inset-0 w-0 bg-blue transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                    <span class="relative ">Детальніше</span>
+                </a>
             </div>
         </section>
         <footer class="container bg-yellow pt-[120px]">

@@ -23,6 +23,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("/assets/fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("/assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("/assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
 @layer base {
   body {
     display: flex;
@@ -65,7 +86,7 @@
 
 @layer components {
   .btn {
-    @apply py-4 px-20 lg:py-3 lg:px-[60px] block w-fit rounded-lg text-white text-[26px] lg:text-[19px] font-medium uppercase font-gilroyMedium;
+    @apply relative inline-block overflow-hidden py-4 px-20 lg:py-3 lg:px-[60px] w-fit rounded-lg text-white text-[26px] lg:text-[19px] font-medium uppercase font-gilroyMedium;
   }
   .btn-opacity {
     @apply bg-opacity-0 text-white block uppercase font-bold border-[0.7px] border-white w-full rounded-lg py-3 xl:py-2 text-[20px] xl:text-[18px] text-center font-gilroyMedium;
